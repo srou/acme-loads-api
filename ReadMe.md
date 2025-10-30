@@ -19,14 +19,15 @@ All endpoints require an API key sent in the `x-api-key` header.
 **Usage examples**  
 
 - Get load with `load_id` **L1001**:
+```bash 
 curl -H "x-api-key: sk_test_9f8c6e12b3a04c57a2d44e89c1a7d9c4" \
-https://acme-load-api.fly.dev/loads/L1001
+https://acme-load-api.fly.dev/loads/L1001```
 
 - Get loads with origin Dallas:
-curl -X POST -H "Content-Type: application/json" \
+```bash curl -X POST -H "Content-Type: application/json" \
 -H "x-api-key: sk_test_9f8c6e12b3a04c57a2d44e89c1a7d9c4" \
 -d '{"origin":"Dallas"}' \
-https://acme-load-api.fly.dev/search
+https://acme-load-api.fly.dev/search```
 
 ### 2. How to Reproduce the Deployment
 
