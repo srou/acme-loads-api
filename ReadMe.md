@@ -62,22 +62,26 @@ https://acme-load-api.fly.dev/search
    flyctl auth login
 
 4. **Initialize the app**
-
+```bash
 flyctl launch
+```
 
 You will be prompted to choose, among other parameters, the app name.
 By default, it should be acme-load-api.
 
 5. **Set API key as a secret**
-
+```bash
 flyctl secrets set API_KEY="replace_with_your_api_key"
-
+```
 6. **Deploy**
+```bash
 flyctl deploy
-
+```
 7. Verify
+```bash
 curl -H "x-api-key: <your-key>" https://<app-name>.fly.dev/loads
 Replace with your API key (step 5) and the app name defined at step 4.
+```
 
 ## Project Structure
 
