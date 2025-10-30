@@ -80,8 +80,9 @@ flyctl deploy
 7. Verify
 ```bash
 curl -H "x-api-key: <your-key>" https://<app-name>.fly.dev/loads
-Replace with your API key (step 5) and the app name defined at step 4.
 ```
+Replace with your API key (step 5) and the app name defined at step 4.
+
 
 ## Project Structure
 
