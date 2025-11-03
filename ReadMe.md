@@ -77,20 +77,8 @@ flyctl secrets set API_KEY="replace_with_your_api_key"
 ```bash
 flyctl deploy
 ```
-7. Verify
+7. **Test it with a query**
 ```bash
 curl -H "x-api-key: <your-key>" https://<app-name>.fly.dev/loads
 ```
 Replace with your API key (step 5) and the app name defined at step 4.
-
-
-## Project Structure
-
-```plaintext
-.
-├── app/
-│   ├── main.py        # FastAPI app entrypoint
-│   └── loads.json     # Mock load data
-├── requirements.txt   # Python dependencies
-├── Dockerfile         # Containerization instructions
-```
